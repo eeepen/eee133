@@ -54,6 +54,25 @@
     <div> i<sub>o</sub>(10) = <input oninput="check_tol(this, 0.1130);"> A </div>
     <div class="space"></div>
 
+    <img src="q5.png">
+    <div class="tiles">
+        <div> v<sub>c</sub>(t) = </div>  <div> <input oninput="check(this, 0);"> + <input oninput="check(this, 100);">e<sup>-<input class="raise" oninput="check(this, 100);">[t-0]</sup> V, 0 < t < 2 </div>
+        <div> v<sub>c</sub>(t) = </div>  <div> <input oninput="check(this, 100);"> + <input oninput="check(this, -100);">e<sup>-<input class="raise" oninput="check(this, 1);">[t-2]</sup> V, 2 < t < 4 </div>
+        <div> v<sub>c</sub>(t) = </div>  <div> <input oninput="check(this, 0);"> + <input oninput="check_tol(this, 86.47);">e<sup>-<input class="raise" oninput="check(this, 100);">[t-4]</sup> V, 4 < t < 6 </div>
+        <div> t<sub>r</sub> = </div>  <div> <input oninput="check_tol(this, 1.416);"> s </div>
+        <div> t<sub>f</sub> = </div>  <div> <input oninput="check_tol(this, 21.97);"> ms </div>
+    </div>
+    <div class="space"></div>
+
+    <img src="q6.png">
+    <div> triangle, square, or round </div>
+    <div class="tiles">
+        <div> R = 1 m&Omega; &rightarrow; </div>  <div> <input oninput="check(this, 'square');"> wave </div>
+        <div> R = 0.1 &Omega; &rightarrow; </div>  <div> <input oninput="check(this, 'round');"> wave </div>
+        <div> R = 10 &Omega; &rightarrow; </div>  <div> <input oninput="check(this, 'triangle');"> wave </div>
+    </div>
+    <div class="space"></div>
+
 </div>
 </body>
 </html>
