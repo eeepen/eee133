@@ -12,24 +12,21 @@
 <div class="stack">
 
     <div> <a href="../"> < back </a> </div>
-    <div> 8 Linear Regulators </div>
+    <div> 8 Switching Power Supplies </div>
     <img src="q1.png">
-    <div> v<sub>z,off</sub> = <input oninput="check(this, 7.5);"> </div>
-    <div> breakdown, off, or active? </div>
-    <div> zener is <input oninput="check(this, 'breakdown');"> </div>
     <div class="tiles">
-        <div> i<sub>z</sub> = </div>  <div> <input oninput="check_tol(this, 933.3);"> &micro;A </div>
-        <div> v = </div>  <div> <input oninput="check(this, 6.8);"> V </div>
+        <div> D = </div>  <div> <input oninput="check(this, 0.6);"> </div>
+        <div> &Delta;I<sub>o</sub> = </div>  <div> <input oninput="check_tol(this, 0.6667);"> A </div>
+        <div> I<sub>o,max</sub> = </div>  <div> <input oninput="check_tol(this, 10.33);"> A </div>
+        <div> I<sub>o,min</sub> = </div>  <div> <input oninput="check_tol(this, 9.667);"> A </div>
     </div>
     <div class="space"></div>
 
     <img src="q2.png">
     <div class="tiles">
-        <div> Q is </div>  <div> <input oninput="check(this, 'active');"> (co, active, sat) </div>
-        <div> Z is </div>  <div> <input oninput="check(this, 'breakdown');"> (breakdown, off, active) </div>
-        <div> i<sub>b</sub> = </div>  <div> <input oninput="check_tol(this, 9.901);"> &micro;A </div>
-        <div> v<sub>ce</sub> = </div>  <div> <input oninput="check(this, 3.9);"> V </div>
-        <div> i<sub>z</sub> = </div>  <div> <input oninput="check_tol(this, 3.190);"> mA </div>
+        <div> D = </div>  <div> <input oninput="check(this, 0.4);"> </div>
+        <div> L = </div>  <div> <input oninput="check(this, 180);"> &micro;H </div>
+        <div> L<sub>crit</sub> = </div>  <div> <input oninput="check(this, 60);"> &micro;H </div>
     </div>
     <div class="space"></div>
 

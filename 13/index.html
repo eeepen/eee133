@@ -12,51 +12,31 @@
 <div class="stack">
 
     <div> <a href="../"> < back </a> </div>
-    <div> 13 Amplifier Filters </div>
-    <img src="q1_669.png">
+    <div> 13 RLC Periodic Switching </div>
+    <img src="q1.png">
+    <div> slower decay first </div>
+    <div> for t &in; (0, 4) s </div>
     <div class="tiles">
-        <div> R<sub>f</sub> = </div>  <div> <input oninput="check_tol(this, 1.6);"> k&Omega; </div>
-        <div> R<sub>i</sub> = </div>  <div> <input oninput="check_tol(this, 400);"> &Omega; </div>
+        <div> v<sub>c</sub>(t) = </div>  <div> [ <input oninput="check_tol(this, -7.071);">e<sup>-<input class="raise" oninput="check(this, 2);">[t-0]</sup> sin<input oninput="check_tol(this, 1.414);">t ] [u(t-0) - u(t-3)] V </div>
+        <div> i<sub>L</sub>(t) = </div>  <div> [ <input oninput="check(this, 10);">e<sup>-<input class="raise" oninput="check(this, 2);">[t-0]</sup> cos<input oninput="check_tol(this, 1.414);">t + <input oninput="check_tol(this, 14.14);">e<sup>-<input class="raise" oninput="check(this, 2);">t</sup> sin<input oninput="check_tol(this, 1.414);">t ] [u(t-0) - u(t-4)] A </div>
+    </div>
+    <div> for t &in; (4, 8) s </div>
+    <div class="tiles">
+        <div> v<sub>c</sub>(t) = </div>  <div> [ <input oninput="check(this, 10);">e<sup>-<input class="raise" oninput="check(this, 2);">[t-4]</sup> + <input oninput="check(this, -10);">e<sup>-<input class="raise" oninput="check(this, 3);">[t-4]</sup> ] [u(t-4) - u(t-8)] V </div>
+        <div> i<sub>L</sub>(t) = </div>  <div> [ <input oninput="check(this, 10);"> + <input oninput="check(this, -30);">e<sup>-<input class="raise" oninput="check(this, 2);">[t-4]</sup> + <input oninput="check(this, 20);">e<sup>-<input class="raise" oninput="check(this, 3);">[t-4]</sup> ] [u(t-4) - u(t-8)] A </div>
     </div>
     <div class="space"></div>
 
-    <img src="q2_670.png">
+    <img src="q2.png">
+    <div> for t &in; (0, 3) s </div>
     <div class="tiles">
-        <div> R<sub>i</sub> = </div>  <div> <input oninput="check_tol(this, 800);"> &Omega; </div>
-        <div> R<sub>f</sub> = </div>  <div> <input oninput="check_tol(this, 4);"> k&Omega; </div>
+        <div> i<sub>L</sub>(t) = </div>  <div> <input oninput="check(this, 20);">(t-0)e<sup>-<input class="raise" oninput="check(this, 3);">(t-0)</sup> [u(t-0) - u(t-3)] A </div>
+        <div> v<sub>c</sub>(t) = </div>  <div> [ <input oninput="check(this, 10);"> + <input oninput="check(this, -20);">e<sup>-<input class="raise" oninput="check(this, 3);">(t-0)</sup> + <input oninput="check(this, -60);">(t-0)e<sup>-<input class="raise" oninput="check(this, 3);">(t-0)</sup> ] [u(t-0) - u(t-3)] V </div>
     </div>
-    <div class="space"></div>
-
-    <img src="q3_670.png">
+    <div> for t &in; (3, 6) s </div>
     <div class="tiles">
-        <div> R<sub>f</sub> = </div>  <div> <input oninput="check_tol(this, 108.3);"> k&Omega; </div>
-        <div> C<sub>1</sub> = </div>  <div> <input oninput="check_tol(this, 2.65);"> nF </div>
-        <div> C<sub>2</sub> = </div>  <div> <input oninput="check_tol(this, 31.83);"> nF </div>
-    </div>
-    <div class="space"></div>
-
-    <img src="q4_671.png">
-    <div class="tiles">
-        <div> C<sub>1</sub> = </div>  <div> <input oninput="check_tol(this, 4.762);"> nF </div>
-        <div> C<sub>2</sub> = </div>  <div> <input oninput="check_tol(this, 5.263);"> nF </div>
-        <div> R<sub>f</sub> = </div>  <div> <input oninput="check_tol(this, 50);"> k&Omega; </div>
-    </div>
-    <div class="space"></div>
-
-    <img src="q5.png">
-    <div class="tiles">
-        <div> R<sub>f</sub> = </div>  <div> <input oninput="check_tol(this, 8.42);"> k&Omega; </div>
-        <div> R = </div>  <div> <input oninput="check_tol(this, 6.465);"> k&Omega; </div>
-    </div>
-    <div class="space"></div>
-
-    <img src="q6.png">
-    <div class="tiles">
-        <div> &omega;<sub>0</sub> = </div>  <div> <input oninput="check(this, 10);"> krad/s </div>
-        <div> &omega;<sub>1</sub> = </div>  <div> <input oninput="check_tol(this, 9.050);"> krad/s </div>
-        <div> &omega;<sub>2</sub> = </div>  <div> <input oninput="check_tol(this, 11.05);"> krad/s </div>
-        <div> B = </div>  <div> <input oninput="check(this, 2);"> krad/s </div>
-        <div> Q = </div>  <div> <input oninput="check(this, 5);"> </div>
+        <div> i<sub>L</sub>(t) = </div>  <div> <input oninput="check(this, -20);">(t-3)e<sup>-<input class="raise" oninput="check(this, 3);">(t-3)</sup> [u(t-3) - u(t-6)] A </div>
+        <div> v<sub>c</sub>(t) = </div>  <div> <input oninput="check(this, -10);"> + <input oninput="check(this, 20);">e<sup>-<input class="raise" oninput="check(this, 3);">(t-3)</sup> + <input oninput="check(this, 60);">(t-3)e<sup>-<input class="raise" oninput="check(this, 3);">(t-3)</sup> ] [u(t-3) - u(t-6)] V </div>
     </div>
     <div class="space"></div>
 
